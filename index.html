@@ -11,7 +11,7 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <base href="https://thangnguyen91.github.io/testwweb/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -24,14 +24,24 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <title>An Viên</title>
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
   <link rel="manifest" href="manifest.json">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8AqMpVu07Onm3pXHse77MAoyCCV-VZes"></script>
+
 </head>
 <body>
+  <script type="application/javascript">
+    window.flutterWebRenderer = "html";
+  </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = "3459841194";
+    var serviceWorkerVersion = "343907120";
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -40,7 +50,6 @@
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
       scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
 
